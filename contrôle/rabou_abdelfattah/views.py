@@ -3,7 +3,7 @@ from django.shortcuts import render, redirect
 from django.core.paginator import Paginator
 from .models import *
 def index(request):
-    return HttpResponse("voila une premiere vue django")
+    return HttpResponse("Bienvenue")
 
 def produits(request):
      produits = Produit.objects.all()
